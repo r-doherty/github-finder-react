@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 
 export class Navbar extends Component {
   static defaultProps = {
-    icon: 'fab fa-github',
+    title: 'scout',
+    icon: 'fas fa-chess-knight',
   };
 
   static propTypes = {
@@ -15,7 +16,8 @@ export class Navbar extends Component {
     return (
       <nav className='navbar bg-primary'>
         <h1>
-          <i className={this.props.icon} /> {this.props.title}
+          <i className={this.props.icon} style={{ fontSize: 35 }} />{' '}
+          {this.props.title}
         </h1>
       </nav>
     );
